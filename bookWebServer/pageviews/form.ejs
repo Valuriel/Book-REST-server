@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles/basicstyles.css" type="text/css">
+</head>
+<body>
+    <main>
+        <h1><%= header %></h1>
+        <form action="<%= action %>" method="POST">
+            <div>
+                <p>
+                    <label>BookID: <input type="text" name="bookID"
+                        size="5" value="<%= bookID.value %>" 
+                        <%= bookID.readonly %> >
+                    </label>
+                </p>
+                 <p>
+                    <label>Name: <input type="text" name="name"
+                        size="35" value="<%= name.value %>" 
+                        <%= name.readonly %> >
+                    </label>
+                </p>
+                <p>
+                    <label>Author: <input type="text" name="author"
+                        size="25" value="<%= author.value %>" 
+                        <%= author.readonly %> >
+                    </label>
+                </p>
+                <p>
+                    <label>Type: <input type="text" name="type"
+                        size="15" value="<%= type.value %>" 
+                        <%= type.readonly %> >
+                    </label>
+                </p>
+                <p>
+                    <label>Year: <input type="text" name="year"
+                        size="5" value="<%= year.value %>" 
+                        <%= year.readonly %> >
+                    </label>
+                </p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <a href="/"><button>Menu</button></a>
+    </main>
+</body>
+</html>

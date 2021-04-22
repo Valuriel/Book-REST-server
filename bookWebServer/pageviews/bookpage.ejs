@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book data</title>
+    <link rel="stylesheet" href="/styles/basicstyles.css" type="text/css">
+</head>
+<body>
+    <main>
+        <h1>Book data:</h1>
+        <% if(data.message) { %>
+            <p class="<%= data.type %>" >
+                <%= data.message %>
+            </p>
+        <% } else { %>
+            <p>BookID: <%= data.bookID %></p>
+            <p>Name: <%= data.name %></p>
+            <p>Author: <%= data.author %></p>
+            <p>Type: <%= data.type %></p>
+            <p>Year: <%= data.year %></p>
+        <% } %>
+        <a href="/"><button>Menu</button></a>
+    </main>  
+</body>
+</html>

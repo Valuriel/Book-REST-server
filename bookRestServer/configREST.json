@@ -1,0 +1,6 @@
+{
+    "port":4000,
+    "host":"localhost",
+    "resource":"books",
+    "idKey":"bookID"
+}

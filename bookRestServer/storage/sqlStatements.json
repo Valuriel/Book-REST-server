@@ -1,0 +1,12 @@
+{
+    "getAll":["select bookID, name, author, type, year from book"],
+    "get":["select bookID, name, author, type, year from book",
+           "where bookID=?"],
+    "insert":["insert into book (bookID, name, author, type, year)",
+              "values (?,?,?,?,?)"],
+    "update":["update book set name=?, author=?, type=?, year=?",
+              "where bookID=?"
+    ],
+    "remove":["delete from book where bookID=?"],
+    "primaryKey":"bookID"
+}
